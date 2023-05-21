@@ -35,7 +35,7 @@ function start()
 	const loader = new THREE.TextureLoader();
 
 	var cylgeometry = new THREE.CylinderGeometry(6, 6, 0.2, 30);
- 	var cylmaterial = new THREE.MeshLambertMaterial({map: loader.load('../assets/map.png')});
+ 	var cylmaterial = new THREE.MeshLambertMaterial({map: loader.load('../assets/Map_of_Ukraine.png')});
  	var cylmesh = new THREE.Mesh(cylgeometry, cylmaterial);
  	cylmesh.position.set(0, 0, -6);
 	cylmesh.rotation.set(85, 0, -88);
