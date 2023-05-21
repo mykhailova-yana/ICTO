@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+ </head>
+ <body  style="margin: 0px; overflow: hidden">
+	 <a-scene  embedded arjs = "debugUIEnabled: false;">	
+		<a-marker  type='pattern' url='pattern-Rubens_saturn.patt'>
+			<a-entity rotation="90 0 0">
+				<a-entity light="color: #AFA; intensity: 1.0" position="50 0 0"></a-entity>
+				<a-entity animation="property: rotation; to: 0 360 27; loop: true; dur: 10000" rotation="0 0 27">
+					<a-sphere radius="6" material="src: 8k_saturn.jpg" 
+					segments-height="16"></a-sphere>
+					
+					<a-ring color="white" radius-inner="14.832" radius-outer="15.588" material="side: double" src="8k_saturn_ring_alpha.png"
+						rotation="90 0 0"></a-ring>
+				</a-entity>
+			</a-entity>
+		</a-marker>
+		<a-entity camera position="0 0 100"></a-entity>
+		</a-scene>
+		
+	</a-scene>
+	</body>
+</html>
